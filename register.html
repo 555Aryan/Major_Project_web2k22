@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech_no_World-Register</title>
+    <link rel="php" href="/PHP/register.php">
+    <style>
+
+        body{
+            color: rgb(32, 32, 32);
+            padding: 20px;
+        
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: antiquewhite;
+        }
+        #main{
+            
+            border: solid;
+            border-radius: 15px;
+            justify-content: center;
+            justify-self:center;
+            background-color: aquamarine;
+        }
+        #main-inner{padding: 25px;
+        margin: 10px;}
+        #name{padding: 5px;
+        margin: 10px;}
+        #mail{padding: 5px;
+        margin: 10px;}
+            #email{margin: 5px;}
+
+            #contact{margin: 5px;}
+
+            button{border-radius :5px; 
+                border-color:aliceblue;}
+
+                #btn{margin: 10px;}
+            
+    </style>
+    <link rel="php" href="PHP/register.php">
+</head>
+<body>
+    <form action="/PHP/register.php" method="post">
+        <div id="main">
+            <h1 style="font-size: 40px; margin: 10px;">Tech_no_World</h1>
+            <h3 style="margin:10px;">Welcome to the business blogging world !</h3>
+           <div id="main-inner">
+            <h1>Register Your Information</h1>
+            <div id="name">
+                <input type="text" name="FirstName" id="name" placeholder="First Name" required>
+                <input type="text" name="MidName" id="name" placeholder="Mid Name">
+                <input type="text" name="LastName" id="name" placeholder="Last Name" required>
+            </div>
+            <div id="mail">
+                <input type="varchar" name="Email" id="email" placeholder="Email id" required><br>
+                <input type="password" name="Password" id="email" placeholder="Password">
+                <ul>
+                <p>*password should be atleast 8 characters long.</p>
+                <p>*It contains special symbols, digits and both uppercase and lowercase letters.</p>
+                </ul>
+            </div>
+            <h1>Contact Information</h1>
+            <div id="contact">
+                
+                <input type="number" name="Contact" id="contact" placeholder="contact:XXXXX122345"><br>
+                <input type="text" name="Address" id="contact" placeholder="Address">
+                <input type="text" name="City" id="city" placeholder="City">
+                <input type="text" name="State" id="state" placeholder="State">
+            </div>
+            <h1>Interests</h1>
+            <div id="interest">
+                <ul>
+                    <button><input type="radio">Business</button>
+                    <button><input type="radio" checked>Lifestyle</button>
+                    <button><input type="radio">Science and Technology</button>
+                    <button><input type="radio">Communication</button>
+                    <button><input type="radio">Sports</button>
+                    <button><input type="radio">Politics</button>
+                </ul>
+            </div>
+            <br>
+            <div id="botton-btn" style="display: inline-flex; width:100%;">
+                <button type="submit" id="btn" style="font-size: large; width: 100%;">submit</button>
+                <button type="reset" id="btn" style="font-size: large; width: 100%;">reset</button>
+            </div>
+           </div>
+
+        </div>
+     </form>
+</body>
+</html>

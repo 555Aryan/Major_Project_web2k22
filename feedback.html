@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tech_no_World</title>
+    <style>
+
+        body{
+            margin: 30px;
+        }
+        header{background: #ee5b32;}
+.orange-head-link{
+    background: #ee5b32;
+    display: inline-flex;
+    width: 100%;}
+
+.menu-scroll-header{text-align: left;
+    width: 100%;
+}
+.logo-nav{text-align: right;
+    width: 100%;}
+
+.title-advertise{
+    background-image: url("//images/business-guide.png");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+.logo-nav{
+    background-color:#ee5b32 ;
+    color: #ffffff;
+    position: relative;
+    min-height: 40px;
+    color: #aaa;
+    margin: 0 auto;
+}
+#header-nav-link{
+    padding: 5px;
+    margin: 0px;
+    text-decoration: none;
+    background: #aaa;
+}
+.header-main{padding: 0;
+margin:0;}
+
+.main-title{color:black;}
+
+ul.social-logo{padding: 15px;
+text-align: end;}
+
+#social{padding:5px;
+text-decoration: none;}
+
+.blogBTM{ 
+    padding: 10px;
+    margin: 10px;
+    border:solid #aaa;
+    background-color: rgb(121, 243, 162);
+}
+footer{
+        border: solid;
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        background-color:#aaa;
+    }
+
+    #footer-div{
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    display: inline-flex;
+    background-color:azure;}
+    </style>
+    <link rel="php" href="PHP/feedback.php">
+</head>
+<body>
+    <form action="PHP/feedback.php">
+    <header class="header-main">
+        <div class="orange-head-link" style="display: inline-flex; align-items: center;">
+            <div class="menu-scroll-header">
+                <ul id="plasma_menu">
+                    <a id="header-nav-link" href="homepg.html">Home</a>
+                    <a id="header-nav-link" href="About.html">About</a>
+                    
+                </ul>
+            </div>
+            <div class="logo-nav">
+                <ul class="social-logo">
+                    <div style="background-color: #ffffff; display: inline-flex; align-items: center; justify-content: left;">
+                        <img src="images/user.png" alt="user" width="25px">
+                        <ul>
+                            <a id="social" href="register.html"> Register</a>
+                            <a id="social" href="PHP/login.php"> User_login</a>
+                        </ul>
+                        <br>
+                        
+                        <div><a id="social" href="About.html">About</a></div>
+                    </div>
+                    
+                   
+                </ul>
+            </div>
+            
+        </div>
+        <br>
+        <div style=" text-align: center;">
+            <div style="display: inline-flex; align-items: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: #ffffff;">
+            <img src="images/WhatsApp Image 2022-11-15 at 7.37.56 PM (1).jpeg" alt="Title-logo" width="150px">
+            <h1 class="main-title" style="font-size: 50px;"><a href="homepg.html" style="text-decoration: none; color:black">tech_no_World</a></h1>
+            </div>
+            <h3>Business Blogging ! Welcome to the world of buusiness</h3>
+        </div>
+        
+    </header>
+    
+        <fieldset>
+            <legend>We welcomes your feedback</legend>
+        First Name : <INPUT type="text" name="firstname" placeholder="Enter name here">
+            Second Name : <INPUT type="text" name="secondname"  placeholder="Enter surname here">
+            <BR>
+            <BR>
+            <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->  
+            <INPUT type="radio" name="gender" value="male">Male<BR>
+            <INPUT type="radio" name="gender" value="female">Female  
+            <BR>
+            <BR>
+            <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+            email: <INPUT type="email" name="mail" placeholder="e-mail address">
+            <BR>
+            <BR>
+              Comment :<BR>        
+              <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+              <BR>
+              
+              <BR>
+              <INPUT TYPE="submit" value="Send Feedback">
+              <INPUT TYPE="reset" value="Reset">
+              </fieldset>
+    </form>
+    <footer>
+        <div id="footer-div">
+            <a href="#"><h1 style="font-size: 80px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:blue;">tech-no-World</h1></a>
+        </div>
+        
+        <h3>See this most viewed blogs also :</h3>
+        <div id="footer-div">
+            <div>
+            <a href="Blogs/business-development-ethics.html">Business Development Ethics</a><br>
+            <a href="Blogs/what-drives-business-development-activity.html">What Drives Business Development Activity?</a><br>
+            <a href="Blogs/what-should-a-buisness-developer-know.html">What Should a Business Developer Know?</a><br>
+            <a href="Blogs/what-are-the-basics-of-business-development.html">What are the Basics of Business Development?</a><br>
+            
+        </div>
+        <div id="footer-div">
+            <div style="width: 100%;">
+            <a href="Blogs/Project-management-business-planning.html">Project Management/Business Planning</a><br>
+            <a href="Blogs/business-development-executive.html">Business Development Executive</a><br>
+            <a href="Blogs/marketing.html">Marketing</a><br>
+            <a href="Blogs/understanding-the-basics-of-business-development.html">Understanding the Basics of Business Development</a>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
